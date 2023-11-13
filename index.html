@@ -1,14 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <p>pruebaaa</p>
+  <!-- MENU ENCABEZADO -->
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">Ingrid</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio" onclick="ClickOpcionesMenu()">INICIO</a></li>
+          <li><a href="#sobremi" onclick="ClickOpcionesMenu()">SOBRE MI</a></li>
+          <li><a href="#portfolio" onclick="ClickOpcionesMenu()">PORTAFOLIO</a></li>
+          <li><a href="#contacto" onclick="ClickOpcionesMenu()">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="menu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+
+  <!-- SECCION INICIO -->
+  <section id="inicio" class="inicio">
+
+    <video autoplay muted loop id="video-fondo">
+      <source src="MultiContenido/video-fondo.mp4" type="video/mp4">
+    </video>
+
+    <div class="contenedor-img">
+      <img src="MultiContenido/fotoportafolio.jfif" alt="foto" class="img">
+    </div>
+
+    <div class="contenido-banner">
+      <h1>Bienvenid@ a mi Portafolio</h1>
+      <p class="p">Mi nombre es</p>
+      <h2 class="h2-nombre">INGRID AYBAR CAMACHO</h2>
+      <h3 class="h2-rol">Desarrolladora Front-end</h3>
+      <p class="texto-inicio">Explora mi trabajo y conoce más sobre mi pasión por el desarrollo web. <br>¡Gracias por
+        visitar!</p>
+      <div class="redes">
+        <!--target="_blank" = en los a se usa para que el enlace se habra en otra pestaña-->
+        <a href="https://www.linkedin.com/in/ingrid-karen-aybar-camacho-ba8941266/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Ingrid1802" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <button>
+        <a href="MultiContenido/CV -Ingrid Karen Aybar Camacho.pdf" download="CV-IngridAybar"
+          style="color:#fff; text-decoration: none;">
+          Descargar CV <i class="fa-solid fa-download"></i>
+        </a>
+      </button>
+      <a href="https://drive.google.com/file/d/106x8xzegDZKwze8wcwsN4MVPQSHTIlfI/view?usp=sharing" target="_blank"
+        class="abrir-cv-online">
+        O abrir en Linea</a>
+    </div>
+  </section>
+
+  <!-- SECCION SOBRE MI -->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p><span>Hola, soy Ingrid Aybar.</span> Una persona alegre y apasionada que cree firmemente en el aprendizaje
+        constante e infinito. Mi enfoque en el aprendizaje me impulsa a descubrir algo nuevo cada día y a evolucionar
+        continuamente.<br><br>
+
+        Con 18 años, he comprendido que el conocimiento es ilimitado, lo que me motiva a ver cada día como una
+        oportunidad para adquirir nuevas habilidades. Mi valentía y enfoque me han llevado a superar obstáculos y
+        desafíos con determinación.<br><br>
+
+        Mi experiencia en atención al público me ha brindado una perspectiva única sobre cómo entender y abordar las
+        necesidades de las personas. Además, decidí canalizar esta habilidad en el mundo del desarrollo web, donde puedo
+        brindar soluciones prácticas para mejorar la experiencia de usuario y ofrecer un excelente servicio.<br><br>
+
+        Mi ingreso al bootcamp de Laboratoria para desarrollo web es un emocionante paso en mi viaje, donde busco
+        aplicar mi enfoque centrado en la resolución de problemas y la creatividad en cada proyecto.<br><br>
+
+        Mi objetivo es adquirir habilidades técnicas sólidas y contribuir a proyectos con un impacto positivo en la
+        comunidad. Si buscas a alguien apasionado, valiente y enfocado en el aprendizaje constante, estaré encantada de
+        conectarme contigo. ¡Juntos podemos embarcarnos en este emocionante viaje de crecimiento y desarrollo!
+      </p>
+
+      <div class="fila">
+        <!-- datos personales -->
+        <div class="col">
+          <h3>Datos Personales</h3>
+          <ul>
+            <li>
+              <strong>Nombre Completo</strong>
+              Ingrid Karen Aybar Camacho
+            </li>
+            <li>
+              <strong>Cumpleaños</strong>
+              20-07-2005
+            </li>
+            <li>
+              <strong>Teléfono</strong>
+              +51 923156755
+            </li>
+            <li>
+              <strong>Email</strong>
+              ingridaybar841@gmail.com
+            </li>
+            <li>
+              <strong>Ubicación</strong>
+              Perú - Lima
+            </li>
+          </ul>
+        </div>
+
+        <!-- intereses -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>JUEGOS</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-headphones"></i>
+              <span>MUSICA</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-utensils"></i>
+              <span>COMIDA</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-dog"></i>
+              <span>MASCOTAS</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-film"></i>
+              <span>PELÍCULAS</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <span>VOLUNTARIADO</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-snowflake"></i>
+              <span>CLIMA FRÍO</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-dumbbell"></i>
+              <span>GYMNASIO</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCION PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+      <h2>PORTAFOLIO</h2>
+    </div>
+  </section>
+
+  <!-- SECCION CONTACTO -->
+  <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+      <h2>CONTACTO</h2>
+      <div class="fila">
+        <!-- Icono de Correo -->
+        <div class="icono-correo">
+          <i class="fas fa-envelope" style="color: #707579; font-size: 25em;"></i>
+        </div>
+
+        <!-- Formulario -->
+        <div class="col">
+          <input type="text" placeholder="Tú Nombre">
+          <input type="text" placeholder="Número telefónico">
+          <input type="text" placeholder="Dirección de correo">
+          <input type="text" placeholder="Tema">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+          <button>
+            Enviar Mensaje<i class="fa-solid fa-paper-plane" style="margin-left: 10px;"></i>
+            <span class="overlay"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer>
+    <div class="datosfooter">
+      <p class="creditos datos"> ©2023 Ingrid Karen Aybar Camacho - Desarrolladora Front-nd</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
