@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: 'Work Sans';
   margin: 0;
-  padding: 0;
 }
 
 html {
@@ -386,6 +385,64 @@ html {
   padding: 20px 0;
 }
 
+.h3-title-proyect {
+  font-size: 40px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+}
+
+.portfolio .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto {
+  position: relative;
+  width: 340px;
+  height: 400px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img {
+  width: 100%;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+
+.portfolio .galeria .proyecto .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(211, 164, 164, 0.8), rgba(211, 164, 164, 0.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+  color: #fff;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+  margin-bottom: 0px;
+}
 
 /*Footer*/
 footer {
@@ -442,4 +499,101 @@ footer {
   .contacto .fila .col {
     width: 100%;
   }
+}
+
+
+
+
+
+
+
+
+/*estilos de los html*/
+
+.htmls-body {
+  background-color: #1e2326;
+  color: #fff;
+  margin: 10px;
+}
+
+.h1-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+.h2-title {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.section1 {
+  display: flex;
+  margin-top: 2%;
+}
+
+.trivia1 {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.trivia2 {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titleTrivia1,
+.titleTrivia2 {
+  width: 30%;
+  height: 47px;
+  background-color: #252A2E;
+  margin: auto;
+  /* Centrar horizontalmente */
+  display: flex;
+  align-items: center;
+  /* Centrar verticalmente */
+  justify-content: center;
+  /* Centrar horizontalmente */
+}
+
+.divContainerGif1,
+.divContainerGif2 {
+  width: 400px;
+  height: 210px;
+  background-color: #4f5357;
+  margin: auto;
+  /* Centrar horizontalmente */
+}
+
+
+.subtitle {
+  margin-top: 1.5%;
+  margin-bottom: 1%;
+}
+
+.secondarySubtitle {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/*diseño de donde se muestra el titulo y video del proyecto*/
+
+.proyecto {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.divContainerGif {
+  width: 400px;
+  height: 210px;
+  background-color: #4f5357;
+  margin: auto;
 }
